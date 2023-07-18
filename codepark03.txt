@@ -1,0 +1,28 @@
+Algoritmo Inscricao
+
+   // Proposta das variáveis
+
+   var
+      nomeUsuario: caracter
+      cpfUsuario: inteiro
+      rgUsuario: inteiro
+      alturaUsuario: real
+      enderecoUsuario: caracter
+
+   // Utilização do comando de atribuição
+
+   nomeUsuario: <- 'José Almeida da Silva';
+   cpfUsuario: <- 12345678900;
+   rgUsuario: <- 9517530;
+   alturaUsuario: <- 1.78;
+   enderecoUsuario: <- 'Rua A, 380 – Centro – Recife/PE';
+
+   // Exibição dos dados informados
+
+Inicio
+   Escrever('Nome: ', nomeUsuario);
+   Escrever('CPF: ', cpfUsuario);
+   Escrever('RG: ', rgUsuario);
+   Escrever('Altura: ' alturaUsuario);
+   Escrever('Endereço: ', enderecoUsuario);
+FimAlgoritmo
