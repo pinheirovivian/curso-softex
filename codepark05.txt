@@ -1,0 +1,11 @@
+(V) Jogador 1: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Sim)
+= true and true and  true = true
+
+(F) Jogador 2: (pontos >= 100) and (moedas >= 5) and (enfrentou_chefe == Não)
+= false and true and true = false
+
+(V) Jogador 3: (pontos < 100) or (moedas < 5) or (enfrentou_chefe == Sim)
+= false or false or true = true
+
+(V) Jogador 4: (pontos != 100) or (moedas != 5) or not (enfrentou_chefe == Não) 
+true or true or not(true) = true or true or false = true
