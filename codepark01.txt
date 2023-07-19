@@ -1,0 +1,53 @@
+algoritmo Competicao
+var
+    primeiroFisica, segundoFisica, terceiroFisica: caractere
+    primeiroMatematica, segundoMatematica, terceiroMatematica: caractere
+    primeiroQuimica, segundoQuimica, terceiroQuimica: caractere
+
+inicio
+    // Verificando a disciplina de Física
+    primeiroFisica <- "Platão"
+    segundoFisica <- "Sócrates"
+    terceiroFisica <- "Aristóteles"
+
+    // Verificando a disciplina de Matemática
+    se primeiroFisica = "Platão" entao
+        primeiroMatematica <- "Platão"
+        segundoMatematica <- "Aristóteles"
+    senao
+        primeiroMatematica <- "Aristóteles"
+        segundoMatematica <- "Platão"
+    fimse
+    terceiroMatematica <- "Sócrates"
+
+    // Verificando a disciplina de Química
+    se primeiroMatematica = "Platão" entao
+        primeiroQuimica <- "Aristóteles"
+    senao
+        primeiroQuimica <- "Platão"
+    fimse
+
+    se primeiroQuimica = "Aristóteles" entao
+        segundoQuimica <- "Sócrates"
+    senao
+        segundoQuimica <- "Aristóteles"
+    fimse
+
+    se primeiroQuimica = "Platão" entao
+        terceiroQuimica <- "Sócrates"
+    senao
+        terceiroQuimica <- "Platão"
+    fimse
+
+    // Exibindo os resultados
+    escreva("Resultados da competição:")
+    escreva("Física 1º lugar - ", primeiroFisica)
+    escreva("Física 2º lugar - ", segundoFisica)
+    escreva("Física 3º lugar - ", terceiroFisica)
+    escreva("Matemática 1º lugar - ", primeiroMatematica)
+    escreva("Matemática 2º lugar - ", segundoMatematica)
+    escreva("Matemática 3º lugar - ", terceiroMatematica)
+    escreva("Química 1º lugar - ", primeiroQuimica)
+    escreva("Química 2º lugar - ", segundoQuimica)
+    escreva("Química 3º lugar - ", terceiroQuimica)
+fimalgoritmo
