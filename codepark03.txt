@@ -19,10 +19,9 @@ Algoritmo Inscricao
 
    // Exibição dos dados informados
 
-Inicio
-   Escrever('Nome: ', nomeUsuario);
-   Escrever('CPF: ', cpfUsuario);
-   Escrever('RG: ', rgUsuario);
-   Escrever('Altura: ' alturaUsuario);
-   Escrever('Endereço: ', enderecoUsuario);
-FimAlgoritmo
+   Escreva('Nome: ', nomeUsuario);
+   Escreva('CPF: ', cpfUsuario);
+   Escreva('RG: ', rgUsuario);
+   Escreva('Altura: ' alturaUsuario);
+   Escreva('Endereço: ', enderecoUsuario);
+fimalgoritmo
