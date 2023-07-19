@@ -18,10 +18,10 @@ Algoritmo Inscricao
    enderecoUsuario: <- 'Rua A, 380 – Centro – Recife/PE';
 
    // Exibição dos dados informados
-
-   Escreva('Nome: ', nomeUsuario);
-   Escreva('CPF: ', cpfUsuario);
-   Escreva('RG: ', rgUsuario);
-   Escreva('Altura: ' alturaUsuario);
-   Escreva('Endereço: ', enderecoUsuario);
+inicio
+   escreva('Nome: ', nomeUsuario);
+   escreva('CPF: ', cpfUsuario);
+   escreva('RG: ', rgUsuario);
+   escreva('Altura: ' alturaUsuario);
+   escreva('Endereço: ', enderecoUsuario);
 fimalgoritmo
