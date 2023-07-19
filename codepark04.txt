@@ -1,16 +1,9 @@
 algoritmo Registro
 
 var
-nome: caractere
-endereco: caractere
-cidade: caractere
-cpf: inteiro
-rg: inteiro
+nome, endereco, cidade, cpf, rg, nomePai, nomeMae: caractere
 idade: inteiro
-nomePai: caractere
-nomeMae: caractere
-peso: real
-renda: real
+peso, renda: real
 
 inicio
 escreva("Digite o seu nome: ");
@@ -34,6 +27,7 @@ leia(peso)
 escreva("Digite a sua renda: ");
 leia(renda)
 
+ // Apresentação das informações cadastradas
 escreva("O seu nome é: ", nome);
 escreva("O seu endereço é: ", endereco);
 escreva("A sua cidade é: ", cidade);
