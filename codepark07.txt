@@ -1,0 +1,15 @@
+algoritmo Tabuada
+
+var
+    contador, numero, resultado: inteiro
+
+inicio
+    escreva("Digite um número inteiro: ")
+    leia(numero)
+
+    escreva("Tabuada do ", numero, ")
+    para contador de 0 ate 9 faca
+        resultado <- numero * contador
+        escreva(numero, " x ", contador, " = ", resultado, ")
+    fimpara
+fimalgoritmo
