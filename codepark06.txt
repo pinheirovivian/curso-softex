@@ -1,0 +1,25 @@
+algoritmo DescobrirTransporte
+
+var
+    resposta: caracter
+
+inicio
+    escreva("Olá, bem-vindo. Vamos descobrir qual meio de transporte você está considerando.")
+    escreva("Responda as perguntas com 'Sim' ou 'Nao'.")
+    escreva("O meio de transporte é terrestre? ")
+    leia(resposta)
+    se (resposta == 'Sim') entao
+        escreva("Cabe apenas uma pessoa? ")
+        leia(resposta)
+        se (resposta == 'Sim') entao
+            escreva("É pesado? ")
+            leia(resposta)
+            se (resposta == 'Nao') entao
+                escreva("Tem pedal? ")
+                leia(resposta)
+                se (resposta == 'Sim') entao
+                    escreva("O transporte escolhido foi a bicicleta.")
+                senao
+                  escreva("Então, o transporte escolhido foi a moto.")
+                fimse
+fimalgoritmo
