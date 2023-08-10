@@ -1,5 +1,6 @@
-var nota1, nota2, media;
+![1](file:///home/vivian/Imagens/Captura%20de%20tela%20de%202023-08-10%2016-51-52.png)
 
+var nota1, nota2, media;
 
 nota1 = Number(window.prompt('Informe a primeira nota'));
 nota2 = Number(window.prompt('Informe a segunda nota'));
