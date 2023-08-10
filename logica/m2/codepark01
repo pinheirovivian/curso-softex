@@ -1,0 +1,14 @@
+![file:///home/vivian/Imagens/Captura%20de%20tela%20de%202023-08-10%2016-51-52.png) 
+
+var nota1, nota2, media;
+
+
+nota1 = Number(window.prompt('Informe a primeira nota'));
+nota2 = Number(window.prompt('Informe a segunda nota'));
+media = nota1 + nota2;
+media = media / 2;
+if (media >= 7) {
+  window.alert('Aluno APROVADO');
+} else {
+  window.alert('Aluno REPROVADO');
+}
