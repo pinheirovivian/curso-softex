@@ -1,0 +1,36 @@
+/* styles.css */
+
+#titulo-principal {
+    font-size: 36px;
+    color: #0077b6;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    background-color: #0077b6;
+    color: white;;
+    margin-top: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+footer {
+    font-size: 20px;
+    background-color: #0077b6;
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+img {
+        width: 300px;
+        height: 200px;
+        vertical-align: middle; 
+        margin: 10px; 
+        border: 2px solid #feffff; 
+        box-shadow: 5px 5px 10px rgba(59, 195, 230, 0.3); 
+        filter: grayscale(50%);
+        transform: rotate(360deg);
+    }
+    
