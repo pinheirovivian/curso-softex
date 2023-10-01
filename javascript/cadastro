@@ -1,0 +1,14 @@
+const prompt = require("prompt-sync")();
+
+console.log("Olá, bem-vindo! Antes de iniciarmos, por favor realize seu cadastro.");
+
+var nome = prompt("Digite o seu nome: ");
+var salario = parseFloat(prompt("Digite o seu salário: "));
+var idade = parseInt(prompt("Digite a sua idade: "));
+console.log("Você possui um diploma? \n1 - Sim\n2 - Não");
+var diploma = parseInt(prompt());
+
+console.log("Nome: " + nome);
+console.log("Salário: " + salario);
+console.log("Idade: " + idade);
+console.log("Possui diploma: " + (diploma == 1 ? "Sim" : "Não"));
