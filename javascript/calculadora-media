@@ -1,0 +1,9 @@
+let nota1 = Number(prompt("Insira a primeira nota: "));
+let nota2 = Number(prompt("Insira a segunda nota: "));
+let nota3 = Number(prompt("Insira a terceira nota: "));
+
+// Calcula a média das notas
+let media = (nota1 + nota2 + nota3) / 3;
+
+// Exibe o resultado no console
+console.log("A média das notas é: " + media.toFixed(2));
