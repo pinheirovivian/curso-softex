@@ -1,0 +1,39 @@
+let banco = {
+    conta: 12345,
+    saldo: 1000,
+    tipoConta: "Corrente",
+    agencia: "Agência Principal",
+
+    buscarSaldo: function() {
+        return this.saldo;
+    },
+
+    deposito: function(valor) {
+        if (valor > 0) {
+            this.saldo += valor;
+            return "Depósito de R$" + valor + " realizado com sucesso. Novo saldo: R$" + this.saldo;
+        } else {
+            return "Valor de depósito inválido.";
+        }
+    },
+
+    saque: function(valor) {
+        if (valor > 0 && valor <= this.saldo) {
+            this.saldo -= valor;
+            return "Saque de R$" + valor + " realizado com sucesso. Novo saldo: R$" + this.saldo;
+        } else if (valor <= 0) {
+            return "Valor de saque inválido.";
+        } else {
+            return "Saldo insuficiente para o saque.";
+        }
+    },
+
+    numeroDaConta: function() {
+        return this.conta;
+    }
+};
+
+console.log("Saldo atual: R$" + banco.buscarSaldo());
+console.log(banco.deposito(500));
+console.log(banco.saque(200));
+console.log("Número da conta: " + banco.numeroDaConta());
