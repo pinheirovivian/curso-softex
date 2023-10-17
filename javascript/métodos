@@ -1,0 +1,112 @@
+// Criando uma Caneta
+class Caneta {
+  constructor(cor, tipoPonta, marca) {
+    this.cor = cor;
+    this.tipoPonta = tipoPonta;
+    this.marca = marca;
+    this.tampada = true;
+  }
+
+  escrever(texto) {
+    if (!this.tampada) {
+      console.log(`Escrevendo "${texto}" com a caneta ${this.cor}.`);
+    } else {
+      console.log("A caneta está tampada. Destampe antes de escrever.");
+    }
+  }
+
+  trocarTinta(novaCor) {
+    this.cor = novaCor;
+  }
+
+  destampar() {
+    this.tampada = false;
+  }
+}
+
+const minhaCaneta = new Caneta("Azul", "Média", "Bic");
+minhaCaneta.destampar();
+minhaCaneta.escrever("Olá, mundo!");
+
+// Criando um Carro
+class Carro {
+  constructor(modelo, ano) {
+    this.modelo = modelo;
+    this.ano = ano;
+    this.velocidade = 0;
+  }
+
+  acelerar(aceleracao) {
+    this.velocidade += aceleracao;
+    console.log(`Acelerando para ${this.velocidade} km/h.`);
+  }
+
+  frear() {
+    this.velocidade = 0;
+    console.log("Freando o carro.");
+  }
+
+  ligar() {
+    console.log("Ligando o carro.");
+  }
+}
+
+const meuCarro = new Carro("Sedan", 2022);
+meuCarro.ligar();
+meuCarro.acelerar(80);
+meuCarro.frear();
+
+// Criando um Usuário
+class Usuario {
+  constructor(nome, idade, email) {
+    this.nome = nome;
+    this.idade = idade;
+    this.email = email;
+  }
+
+  escreverMensagem(mensagem) {
+    console.log(`${this.nome} diz: "${mensagem}"`);
+  }
+
+  aniversario() {
+    this.idade++;
+    console.log(`Feliz aniversário! Agora você tem ${this.idade} anos.`);
+  }
+
+  enviarEmail(destinatario, assunto, corpo) {
+    console.log(`Enviando email para ${destinatario} - Assunto: ${assunto}\n${corpo}`);
+  }
+}
+
+const usuario1 = new Usuario("Alice", 25, "alice@example.com");
+usuario1.escreverMensagem("Olá, como você está?");
+usuario1.aniversario();
+
+// Criando um Cálculo Matemático
+class CalculoMatematico {
+  constructor(numeroA, numeroB) {
+    this.numeroA = numeroA;
+    this.numeroB = numeroB;
+    this.resultado = 0;
+  }
+
+  somar() {
+    this.resultado = this.numeroA + this.numeroB;
+  }
+
+  subtrair() {
+    this.resultado = this.numeroA - this.numeroB;
+  }
+
+  multiplicar() {
+    this.resultado = this.numeroA * this.numeroB;
+  }
+}
+
+const calculo = new CalculoMatematico(10, 5);
+calculo.somar();
+console.log(`Resultado da soma: ${calculo.resultado}`);
+calculo.subtrair();
+console.log(`Resultado da subtração: ${calculo.resultado}`);
+calculo.multiplicar();
+console.log(`Resultado da multiplicação: ${calculo.resultado}`);
